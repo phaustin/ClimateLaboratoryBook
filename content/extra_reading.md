@@ -76,6 +76,10 @@
   - [US standard atmospheres](https://a301_web.eoas.ubc.ca/week5/hydrostatic_balance.html)
   - [Calculating the atmospheric heating rate](https://a301_web.eoas.ubc.ca/week12/assign7b_solution.html#assign7b-solution)
 
+- Statistics
+  - [Significance Tests in Climate Science](https://doi.org/10.1175/2010JCLI3746.1)
+  - [Multiple Statistical Hypothesis Testing in Sciences](https://journals.ametsoc.org/view/journals/bams/97/12/bams-d-15-00267.1.xml) 
+
 
 - Source code repositories
 
