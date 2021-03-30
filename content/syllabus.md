@@ -1,3 +1,12 @@
+# Project Information
+- [Project rubric](https://www.dropbox.com/s/xbjhjxeehtuqwkb/projects_rubric.pdf?dl=0)
+- [Presentation rubric](https://www.dropbox.com/s/lw4kvmq5be3lfh1/presentations_rubric.pdf?dl=0)  (first page is blank - scroll down!)
+
+- 15th April: Presentations
+
+Deadline for projects: 30th April
+
+
 # Course structure and Outline
 
 **All these items are provisional, expect some iteration as we test this out**
@@ -133,9 +142,7 @@ Hartmann chapters 9 (Paleoclimate), 12 (Natural Climate Change) and 13 (Anthropo
 ### Week 12 (5th - 11th Apr): Work on individual projects _(Phil/Rachel)_
 
 ### Week 13 (12-14th Apr): Work on individual projects _(Phil/Rachel)_
+- 15th April: Presentations
 
+Deadline for projects: 30th April
 
-
-Term finishes: April 14th
-
-Exams finish: April 29th
