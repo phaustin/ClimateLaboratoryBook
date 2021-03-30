@@ -189,7 +189,7 @@ plt.title(title)
 plt.show()
 ```
 
-It is often useful to mask your data for statistical significance, and this can be done fairly easily with python:
+It is often useful to mask your data for statistical significance, and this can be done easily with python. Note that this is a naive (although common) way of considering statistical signifance on a map - see https://journals.ametsoc.org/view/journals/bams/97/12/bams-d-15-00267.1.xml for a discussion of the problems with this method. 
 
 ```{code-cell} ipython3
 # We can now plot this 1-point correlation array for comparison with fig. 8.4c in Hartmann
