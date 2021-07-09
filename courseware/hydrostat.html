@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydrostatic balance &#8212; Climate Laboratory Book</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://a301_web.eoas.ubc.ca/courseware/hydrostat.html" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scale heights for typical atmospheric soundings" href="hydrostatic_balance.html" />
+    <link rel="prev" title="Assignment: Insolation and orbital parameters" href="assignment-insolation-orbit.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://a301_web.eoas.ubc.ca/courseware/hydrostat.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Hydrostatic balance" />
+<meta property="og:description" content="Hydrostatic balance  In order to calculate the optical depth we need n, the number concentration of molecules at a particular height in the atmosphere.  This me" />
+
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Climate Laboratory Book</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../home.html">
+   The Climate Laboratory
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus.html">
+   Course structure and Outline
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Front matter
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preamble.html">
+   Preamble
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about.html">
+   About this Book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../who-for.html">
+   Who is the book for?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to.html">
+   How to use this book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../attribution.html">
+   How to cite and reuse this material
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../extra_reading.html">
+   Additional resources
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="models-budgets-fun.html">
+   1. Climate models, the global energy budget, and Fun with Python
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="zero-dim-ebm.html">
+   2. Modeling the global energy budget
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="analytical-efolding.html">
+     2.10.1. Advanced topic: Analytical solution of the global Energy Balance Model
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="climate-system-models.html">
+   3. The climate system and climate models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introducing-cesm.html">
+   4. Introducing the Community Earth System Model (CESM)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="climlab-intro.html">
+   5. Building simple climate models using climlab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="radiation.html">
+   6. A Brief Review of Radiation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="elementary-greenhouse.html">
+   7. Elementary greenhouse models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sympy-greenhouse.html">
+   8. Advanced topic: Solving the two-layer grey gas model analytically with sympy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="grey-radiation-climlab.html">
+   9. Grey radiation modeling with climlab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="radiative-transfer.html">
+   10. Modeling non-scattering radiative transfer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="spectral-bands.html">
+   11. Who needs spectral bands? We do. Some baby steps…
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="radeq.html">
+   12. Radiative Equilibrium
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rce.html">
+   13. Radiative-Convective Equilibrium
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="sensitivity-feedback.html">
+   14. Climate sensitivity and feedback
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="advanced-sensitivity-feedback.html">
+     14.8.1. Advanced topic: Climate sensitivity and feedback
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="transient-cesm.html">
+   15. Examing the transient and equilibrium CO
+   <span class="math notranslate nohighlight">
+    \(_2\)
+   </span>
+   response in the CESM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="transient-toy.html">
+   16. Toy models of transient warming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="clouds.html">
+   17. Clouds and cloud feedback
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="insolation.html">
+   18. Insolation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="orbital.html">
+   19. Orbital variations, insolation, and the ice ages
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="heat-transport.html">
+   20. Heat transport
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="advanced-heat-transport.html">
+     20.7.1. Advanced topic: Heat transport decomposition
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="one-dim-ebm.html">
+   21. The one-dimensional energy balance model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="seasonal-cycle.html">
+   22. Modeling the seasonal cycle of surface temperature
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cesm-atmospheric-dynamics.html">
+   23. Atmospheric Dynamics in the CESM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="numerical-diffusion.html">
+   24. A peek at numerical methods for diffusion models
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="albedo-snowball.html">
+   25. Ice-albedo feedback and Snowball Earth in the EBM
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="advanced-albedo-feedback.html">
+     25.9.1. Advanced topic: Ice albedo feedback in the EBM – test2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="advanced-snowball-earth.html">
+     25.9.2. Advanced topic: Snowball Earth and Large Ice Cap Instability in the EBM
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cesm-coupled-dynamics.html">
+   26. Coupled Dynamics in the CESM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="surface-energy-balance.html">
+   27. The surface energy balance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="land-ocean-contrast.html">
+   28. Land-Ocean contrasts under climate change
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="water-water-everywhere.html">
+   29. Water, water everywhere!
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Assignments
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about-assignments.html">
+   About the assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-zero-dim-ebm.html">
+   Assignment: Climate change in the zero-dimensional EBM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-cesm-control.html">
+   Assignment: Global average budgets in the CESM pre-industrial control simulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-cesm-control-hints.html">
+   Additional hints and guidance for CESM budgets assignment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-simple-clouds.html">
+   Assignment: Clouds in the Leaky Greenhouse Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-rcm-feedback.html">
+   Assignment: Feedbacks in the Radiative-Convective Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-cesm-climate-change.html">
+   Assignment: Climate change in the CESM simulations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assignment-insolation-orbit.html">
+   Assignment: Insolation and orbital parameters
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Extra notebooks
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Hydrostatic balance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="hydrostatic_balance.html">
+   Scale heights for typical atmospheric soundings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="hydrostatic_balance.html#use-pd-dataframe-head-to-see-first-5-lines">
+   Use pd.DataFrame.head to see first 5 lines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="multi_layer_equilibrium.html">
+   Radiative equilibrium
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bayes_lecture.html">
+   What I wish I’d known about statistics
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references.html">
+   References
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/courseware/hydrostat.rst"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scale-heights">
+   Scale Heights
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="hydrostatic-balance">
+<span id="hydro"></span><h1>Hydrostatic balance<a class="headerlink" href="#hydrostatic-balance" title="Permalink to this headline">¶</a></h1>
+<p>In order to calculate the optical depth we need <em>n</em>, the number concentration of molecules at a particular height in the atmosphere.  This means that we need to know the density as a function of height.</p>
+<p>At large scales it is a very good approximation to assume
+<em>hydrostatic balance</em>, which is the statement that the vertical
+pressure differential across a layer provides exactly the amount of
+force necessary to balance gravity, so the atmosphere is not rising or sinking:</p>
+<div class="figure align-default" id="hydrofig">
+<a class="reference internal image-reference" href="courseware/figures/hydrostat.png"><img alt="courseware/figures/hydrostat.png" src="courseware/figures/hydrostat.png" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Hydrostatic balance for a 1 <span class="math notranslate nohighlight">\(m^2\)</span> cross section of a layer</span><a class="headerlink" href="#hydrofig" title="Permalink to this image">¶</a></p>
+</div>
+<p>In symbols, the balance shown by <a class="reference internal" href="#hydrofig"><span class="std std-numref">Fig. 1</span></a> implies that:</p>
+<div class="math notranslate nohighlight" id="equation-hydro-eq">
+<span class="eqno">(1)<a class="headerlink" href="#equation-hydro-eq" title="Permalink to this equation">¶</a></span>\[  dp = - \rho g dz\]</div>
+<p><strong>Question: is this the same pressure p as the local pressure given by
+the equation of state</strong>: <span class="math notranslate nohighlight">\(p=\rho R_d T\)</span>?</p>
+<div class="section" id="scale-heights">
+<h2>Scale Heights<a class="headerlink" href="#scale-heights" title="Permalink to this headline">¶</a></h2>
+<p>In Chapter 1 (p. 8) Roland introduces the idea of a characteristic
+length scale for the variation of pressure in the atmosphere, and on page 14 he defines
+the equation of state for dry air.   To get weighting functions for our
+sounding retrievals we need to now the optical depth <span class="math notranslate nohighlight">\(\tau\)</span> vs. height,
+which means that we need to know the gas density <span class="math notranslate nohighlight">\(\rho\)</span> as a function of height.
+Below I show how to get <span class="math notranslate nohighlight">\(\rho(z)\)</span> for typical atmospheric conditions.</p>
+<div class="math notranslate nohighlight">
+\[p = p_0 \exp \left ( \frac{-z}{H_p} \right )\]</div>
+<p>and on page</p>
+<p>In words – <span class="math notranslate nohighlight">\(H_p\)</span> gives the height at which gravity wins out over the kinetic energy of the air molecules – warmer atmospheres take longer to decrease their pressure by a factor of <span class="math notranslate nohighlight">\(\exp(-H_p/H_p) = \exp(-1)\)</span> (the e-folding height) because the air molecules have more energy to travel higher.</p>
+<ol class="arabic">
+<li><p>Do pressure first: Rewrite <a class="reference internal" href="#equation-hydro-eq">(1)</a> using the ideal gas law:</p>
+<div class="math notranslate nohighlight" id="equation-hydro1">
+<span class="eqno">(2)<a class="headerlink" href="#equation-hydro1" title="Permalink to this equation">¶</a></span>\[   dp = - \rho g dz = - \frac{p}{R_d T}  g dz = \frac{p}{H_p}\]</div>
+<p>where <span class="math notranslate nohighlight">\(H_p=R_d T/g\)</span> is the pressure scale height.</p>
+<div class="math notranslate nohighlight">
+\[d\ln p = - \frac{dz }{H_p}\]</div>
+<div class="math notranslate nohighlight">
+\[\int_{p_0}^{p}\!\,d \ln p =  - \int_{0 }^{z}\!\frac{1}{H_p} dz^\prime\]</div>
+<p>Since  temperature (and gravity) are changing with height, we need to know profiles of g(z) and T(z)
+to go any further.  If we don’t have those profiles, then a useful approximation is to define a vertically averaged <span class="math notranslate nohighlight">\(H_p\)</span>, since
+the average involves a large mass of air (about 10 metric tons/cubic meter), it will vary more slowly than the temperature at any one level on any given day, and we can still get a useful profile of pressure vs. height without having a specific sounding:</p>
+<div class="math notranslate nohighlight" id="equation-pressavg">
+<span class="eqno">(3)<a class="headerlink" href="#equation-pressavg" title="Permalink to this equation">¶</a></span>\[\frac{ 1}{\overline{H_p}} = \overline{ \left ( \frac{1 }{H_p} \right )} = \frac{\int_{0 }^{z}\!\frac{1}{H_p} dz^\prime  }{z-0}\]</div>
+<p>Now we can replace the z integral by the average:</p>
+<div class="math notranslate nohighlight">
+\[\int_{p_0}^{p}\!\,d \ln p =  - \int_{0 }^{z}\!\frac{1}{H_p} dz^\prime = -\frac{z}{\overline{H_p}}\]</div>
+<p>and  integrating the left-hand side:</p>
+<div class="math notranslate nohighlight">
+\[\ln p/p_0 = - \frac{z }{\overline{H_p}}\]</div>
+<p>Taking exp of both sides gives the pressure with height:</p>
+<div class="math notranslate nohighlight">
+\[p = p_0 \exp \left ( - \frac{z }{\overline H_p} \right )\]</div>
+<p>Values for <span class="math notranslate nohighlight">\(\overline{H_p}\)</span> are relatively constant for a particular climate regime, like midlatitude winter.</p>
+</li>
+<li><p>Now repeat this for density <span class="math notranslate nohighlight">\(\rho\)</span>.  We need to use the chain rule for the equation of state:</p>
+<div class="math notranslate nohighlight">
+\[\frac{dp }{dz}  = \frac{d }{dz}  (\rho R_d T) = R_d \left ( \frac{d\rho }{dz} T
++ \rho \frac{ dT}{dz} \right )  = - \rho g\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d\rho }{dz}  = -\frac{\rho }{T}  \left ( \frac{g }{R_d} + \frac{ dT}{dz} \right ) = - \rho \left ( \frac{1 }{H} +  \frac{1 }{T} \frac{dT }{dz} \right ) = - \frac{\rho}{H_\rho}\]</div>
+<p>Bottom line – with this definition of the density scale height we’ve got an equation that looks like <a class="reference internal" href="#equation-hydro1">(2)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-densavg">
+<span class="eqno">(4)<a class="headerlink" href="#equation-densavg" title="Permalink to this equation">¶</a></span>\[  \frac{d\rho }{\rho} = - \left ( \frac{1 }{H} +
+                   \frac{1 }{T} \frac{dT }{dz} \right ) dz = - \frac{dz }{H_\rho}\]</div>
+<p>Pull the same trick for the vertical average:</p>
+<div class="math notranslate nohighlight" id="equation-denstrick">
+<span class="eqno">(5)<a class="headerlink" href="#equation-denstrick" title="Permalink to this equation">¶</a></span>\[\frac{ 1}{\overline{H_\rho}} = \overline{ \left ( \frac{1 }{H_\rho} \right )} = \frac{\int_{0 }^{z}\!\frac{1}{H_\rho} dz^\prime  }{z-0}\]</div>
+<p>We use this vertical average  in exactly the same way as before to
+get the density profile:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \ln \rho/\rho_0 =&amp; - \frac{z }{\overline{H_\rho }} \\
+  \rho =&amp; \rho_0 \exp \left ( - \frac{z }{\overline H_\rho} \right )\end{aligned}\end{split}\]</div>
+<p>In the hydrostatic.ipynb notebook I show that the midlatitude summer sounding gives
+<span class="math notranslate nohighlight">\(H_p\approx7.8\)</span> km and <span class="math notranslate nohighlight">\(H_\rho \approx 9.5\)</span> km.  We can use the equations:</p>
+<div class="math notranslate nohighlight">
+\[p = p_o \exp ( -z/H_p)\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\rho = \rho_0 \exp ( -z/H_\rho)\]</div>
+<p>To calculate the optical depth for various atmospheric conditions.</p>
+</li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./courseware"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="assignment-insolation-orbit.html" title="previous page">Assignment: Insolation and orbital parameters</a>
+    <a class='right-next' id="next-link" href="hydrostatic_balance.html" title="next page">Scale heights for typical atmospheric soundings</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Brian Rose<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
