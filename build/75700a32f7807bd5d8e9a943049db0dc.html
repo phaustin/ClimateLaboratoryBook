@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Human Verification</title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = ['manchesterhive.com','brill.com','daredictionary.com','jnccn.org','akjournals.com','loebclassics.com','elgaronline.com','ajtmh.org','jurabibliotek.dk','elibrary.imf.org','berghahnjournals.com','bristoluniversitypressdigital.com','thejns.org'];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AF003RpOtnW57GjeDC85LxyAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM1HBzvyBYk34Sz/P1AgEQgDviakVVYoaBUVYZco0kT14OmuFfiOteoo1JGQpt5q1WAlwfzaCV4MXaJfz49+inZWRh8wZscoDKCsdVRQ==",
+          "iv":"D54rpwBn4QAAUPlC",
+          "context":"iicBT2FGo+dXeVMK4XdeGLQc+bGmWp+hnt8m+TOdZt0j42Rbdi6QDOTrEwIBj33FjVyU9XTVi0fHWKwcURfBGFahiDyGem1eALY9zHkiZofxMCHApJ+LedydE0ysGNIu30pH3yGEyI38b1yjt+AoeL/dH9juRHHC108crvhkLovIAIcXtOIDhNtmfFGDonMBjX3Pv0yDjFHg5l8Ey8mAVnRbvIPC5O23YMM8Cxhphrlrm0FqayyjULsuRz6hCkbNWjenhcuePrCiPVwhT0ZLDRi+SzJK6W68sA1IhAq+m98L/pL9je2T8Ib14HNppnyQFNx82OG8TdfEFYrYvsoyYm8FV9VKILIxhkb6cprFO37i/HrdH+3yMGAV9quh012RMzpprFn88YyeHWULBhSIRL/x967qoVosp8fwyCX7vabEEJUJTe/10bBXxXhFo6ftKufl/wfd5eTy7LBIvzukEZNpeK0+WrN9ZQdkmoAmeLL04trf74vHf7EtmFxzBPPpPBodclnSAXp60ube1iWEYzRvCfrPVSS//wy7ggQWvkiwrTAQU5VQLZMjEibzwZnn8KON9dd+8za5a6SYqBVaGO8XNEvJOxmAuTAiBMUGsz7iVsX7KroFKVZvTxn0LTX8OuHL4B5G1IIGg1HQ2kdtZJe7y+nKHHaRCPupAFeEaYvF8DZmDky444IMm3CNsZCGQlgGn1Z8gQ8mzoz6Io7WPxRcKpY1jvsOaf7YHpQbaicoTcaos1nQBneTRUtbzz90fk+P"
+};
+    </script>
+    <script src="https://ac0c8b7050ff.23402c99.us-east-1.token.awswaf.com/ac0c8b7050ff/308ff3d1b0fe/3f61fdc949cd/challenge.js"></script>
+    <script src="https://ac0c8b7050ff.23402c99.us-east-1.captcha.awswaf.com/ac0c8b7050ff/308ff3d1b0fe/3f61fdc949cd/captcha.js"></script>
+</head>
+<body>
+    <div id="captcha-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        window.addEventListener("load", function() {
+          const container = document.querySelector("#captcha-container");
+          CaptchaScript.renderCaptcha(container, async (voucher) => {
+              await ChallengeScript.submitCaptcha(voucher);
+              window.location.reload(true);
+          }
+      );
+    });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, you need to verify that you're not a robot by solving a CAPTCHA puzzle.
+         The CAPTCHA puzzle requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>
