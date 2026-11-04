@@ -18,3 +18,5 @@ dependencies:
   - mystmd  # needed to rebuild the book from source
   - jupyterlab-myst
   - imagemagick
+  - jupyter-book
+  - nodejs

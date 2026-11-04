@@ -1,0 +1,28 @@
+[workspace]
+authors = ["Phil Austin <paustin@eos.ubc.ca>"]
+channels = ["conda-forge"]
+name = "climlab-courseware"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "*"
+numpy = "*"
+matplotlib = "*"
+xarray = "*"
+metpy = "*"
+cartopy = "*"
+sympy = "*"
+ffmpeg = "*"
+jupyter = "*"
+climlab = "*"
+numba = ">=0.43.1"
+netcdf4 = "*"
+nc-time-axis = "*"
+mystmd = "*"
+jupyterlab-myst = "*"
+imagemagick = "*"
+jupyter-book = "*"
+nodejs = "*"
