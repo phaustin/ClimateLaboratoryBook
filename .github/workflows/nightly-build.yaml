@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: ${{ github.repository_owner == 'brian-rose' }}
+    if: ${{ github.repository_owner == 'phaustin' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       build_command: 'myst build --html'
