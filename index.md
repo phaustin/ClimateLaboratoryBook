@@ -1,4 +1,4 @@
-# The Climate Laboratory
+# The Climate Laboratory -- test
 
 ***A hands-on approach to climate physics and climate modeling***
 
