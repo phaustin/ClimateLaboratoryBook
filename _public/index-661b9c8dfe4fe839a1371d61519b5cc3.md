@@ -1,4 +1,4 @@
-# The Climate Laboratory -- test
+# The Climate Laboratory -- test -- Wednesday
 
 ***A hands-on approach to climate physics and climate modeling***
 
