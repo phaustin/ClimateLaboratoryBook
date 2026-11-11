@@ -4,3 +4,6 @@ content/.ipynb_checkpoints/*
 content/*/.ipynb_checkpoints/*
 *.pyc
 _build/
+# pixi environments
+.pixi/*
+!.pixi/config.toml

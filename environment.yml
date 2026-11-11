@@ -11,6 +11,7 @@ dependencies:
   - sympy
   - ffmpeg
   - jupyter
+  - jupyter-book>2
   - climlab
   - numba>=0.43.1  # older version will hang forever under python 3, https://github.com/climlab/climlab/issues/101
   - netcdf4
